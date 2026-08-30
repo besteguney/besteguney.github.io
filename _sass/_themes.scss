@@ -3,15 +3,15 @@
  ******************************************************************************/
 
 :root {
-  --global-bg-color: #{$white-color};
+  --global-bg-color: #{$paper-color};
   --global-code-bg-color: #{$code-bg-color-light};
-  --global-text-color: #{$black-color};
-  --global-text-color-light: #{$grey-color};
-  --global-theme-color: #{$pink-color};
-  --global-hover-color: #{$pink-color};
+  --global-text-color: #{$ink-color};
+  --global-text-color-light: #{$ink-color-soft};
+  --global-theme-color: #{$slate-color};
+  --global-hover-color: #{$slate-color};
   --global-hover-text-color: #{$white-color};
-  --global-footer-bg-color: #{$grey-color-dark};
-  --global-footer-text-color: #{$grey-color-light};
+  --global-footer-bg-color: #{$ink-color};
+  --global-footer-text-color: #{$fog-color};
   --global-footer-link-color: #{$white-color};
   --global-distill-app-color: #{$grey-color};
   --global-divider-color: rgba(0,0,0,.1);
@@ -48,19 +48,19 @@
 }
 
 html[data-theme='dark'] {
-  --global-bg-color: #{$grey-color-dark};
+  --global-bg-color: #{$charcoal-color};
   --global-code-bg-color: #{$code-bg-color-dark};
-  --global-text-color: #{$grey-color-light};
-  --global-text-color-light: #{$grey-color-light};
-  --global-theme-color: #{$green-color-dark};
-  --global-hover-color: #{$green-color-dark};
-  --global-hover-text-color: #{$white-color};
-  --global-footer-bg-color: #{$grey-color-light};
-  --global-footer-text-color: #{$grey-color-dark};
-  --global-footer-link-color: #{$black-color};
+  --global-text-color: #{$fog-color};
+  --global-text-color-light: #{darken($fog-color, 25%)};
+  --global-theme-color: #{$slate-color-dark};
+  --global-hover-color: #{$slate-color-dark};
+  --global-hover-text-color: #{$charcoal-color};
+  --global-footer-bg-color: #{$fog-color-dark};
+  --global-footer-text-color: #{$fog-color};
+  --global-footer-link-color: #{$white-color};
   --global-distill-app-color: #{$grey-color-light};
-  --global-divider-color: #424246;
-  --global-card-bg-color: #{$grey-900};
+  --global-divider-color: #35363b;
+  --global-card-bg-color: #{$fog-color-dark};
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;

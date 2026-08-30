@@ -1,0 +1,5 @@
+# Reading list shown on the About page (enable with `reading: true` in _pages/about.md).
+# Add entries below, most recent first. status is either `reading` or `finished`.
+# - title: Designing Data-Intensive Applications
+#   author: Martin Kleppmann
+#   status: reading

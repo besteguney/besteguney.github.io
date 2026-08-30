@@ -52,6 +52,12 @@ layout: default
             {%- include latest_posts.html %}
           {%- endif %}
 
+          <!-- Reading -->
+          {% if page.reading -%}
+            <h2><a href="{{ '/blog/tag/books/' | relative_url }}" style="color: inherit;">reading</a></h2>
+            {%- include reading.html %}
+          {%- endif %}
+
           <!-- Selected papers -->
           {% if page.selected_papers -%}
             <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">selected publications</a></h2>

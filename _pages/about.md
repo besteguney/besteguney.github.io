@@ -11,6 +11,7 @@ profile:
 news: true  # includes a list of news items
 latest_posts: true  # includes a list of the newest posts
 selected_papers: false # includes a list of papers marked as "selected={true}"
+reading: false # includes a "reading" list from _data/reading.yml -- flip to true once you've added books there
 social: true  # includes social icons at the bottom of the page
 ---
 

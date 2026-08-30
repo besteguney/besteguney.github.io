@@ -1,0 +1,18 @@
+          <div class="reading">
+            {% if site.data.reading != blank -%}
+            <div class="table-responsive">
+              <table class="table table-sm table-borderless">
+              {%- for item in site.data.reading %}
+                <tr class="{% if item.status == 'reading' %}current{% endif %}">
+                  <th scope="row">{% if item.status == 'reading' %}reading{% else %}read{% endif %}</th>
+                  <td>
+                    <span class="reading-title">{{ item.title }}</span>{% if item.author %} <span class="reading-author">&mdash; {{ item.author }}</span>{% endif %}
+                  </td>
+                </tr>
+              {%- endfor %}
+              </table>
+            </div>
+          {%- else -%}
+            <p>Nothing on the list yet...</p>
+          {%- endif %}
+          </div>
